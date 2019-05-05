@@ -69,7 +69,7 @@ public class sendRequest extends BroadcastReceiver {
                 // this.setResultCode(Telephony.Sms.Intents.RESULT_SMS_HANDLED);
                 // abortBroadcast();
 
-                if (strMessage.substring(0, 2).equals("C1C")) {
+                if (strMessage.substring(0, 3).equals("C1C")) {
                     //Working on Sms
                     String origMessage = strMessage.substring(3);
                     String msgsPart[] = strMessage.split("#_#");
